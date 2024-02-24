@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:3000"
+      # front-end rerouted to use 5000
+      # back-end using 3000
+      # front-end using 3000 
